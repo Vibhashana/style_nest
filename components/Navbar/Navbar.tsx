@@ -25,11 +25,7 @@ const Navbar = () => {
           {menu.length > 0 && (
             <div className="ml-24 hidden gap-8 md:flex">
               {menu.map(({ title, url }, index) => (
-                <Link
-                  key={index}
-                  href={url}
-                  className="font-medium text-neutral-500"
-                >
+                <Link key={index} href={url} className="link font-medium">
                   {title}
                 </Link>
               ))}
