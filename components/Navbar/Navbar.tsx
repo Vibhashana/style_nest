@@ -11,9 +11,9 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="">
+    <header className="py-6">
       <div className="content-container flex w-full items-center">
-        <nav className="flex w-full items-center justify-between py-4">
+        <nav className="flex w-full items-center justify-between">
           <Link href="/" prefetch={false}>
             <Image
               src="/stylenest.svg"
@@ -23,10 +23,14 @@ const Navbar = () => {
             />
           </Link>
           {menu.length > 0 && (
-            <div className="ml-20 hidden gap-8 md:flex">
-              {menu.map((item, index) => (
-                <Link key={index} href={item.url} className="text-neutral-500">
-                  {item.title}
+            <div className="ml-24 hidden gap-8 md:flex">
+              {menu.map(({ title, url }, index) => (
+                <Link
+                  key={index}
+                  href={url}
+                  className="font-medium text-neutral-500"
+                >
+                  {title}
                 </Link>
               ))}
             </div>
@@ -34,7 +38,7 @@ const Navbar = () => {
 
           <div className="ml-auto">
             <Button variant="ghost" size="icon" aria-label="Shopping cart">
-              <ShoppingBag className="!size-6 text-neutral-500" />
+              <ShoppingBag className="!size-5 text-neutral-900" />
               <span className="sr-only">View shopping cart</span>
             </Button>
           </div>

@@ -23,7 +23,7 @@ const MobileNav = ({ menu }: MobileNavProps) => {
         </SheetTitle>
         <SheetTrigger asChild>
           <Button variant="ghost" size="icon" className="ml-4 md:hidden">
-            <Menu className="!size-6 text-neutral-500" />
+            <Menu className="!size-5 text-neutral-900" />
             <span className="sr-only">Toggle navigation menu</span>
           </Button>
         </SheetTrigger>
@@ -49,9 +49,9 @@ const MobileNav = ({ menu }: MobileNavProps) => {
           </div>
           {menu.length > 0 && (
             <div className="mt-8 grid gap-2">
-              {menu.map((item, index) => (
-                <Link key={index} href={item.url} className="text-neutral-500">
-                  {item.title}
+              {menu.map(({ title, url }, index) => (
+                <Link key={index} href={url} className="py-2 text-neutral-500">
+                  {title}
                 </Link>
               ))}
             </div>

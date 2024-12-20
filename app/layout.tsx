@@ -9,7 +9,7 @@ const notoSans = Noto_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Style Nest",
+  title: "StyleNest",
   description: "A modern shopping experience.",
 };
 
@@ -20,11 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${notoSans.className} antialiased`}
-      >
-        {children}
-      </body>
+      <body className={`${notoSans.className} antialiased`}>{children}</body>
     </html>
   );
 }
