@@ -22,7 +22,7 @@ const MobileNav = ({ menu }: MobileNavProps) => {
           <span className="sr-only">Navigation menu panel</span>
         </SheetTitle>
         <SheetTrigger asChild>
-          <Button variant="ghost" size="icon" className="ml-4 md:hidden">
+          <Button variant="ghost" size="icon" className="md:hidden">
             <Menu className="!size-5 text-neutral-900" />
             <span className="sr-only">Toggle navigation menu</span>
           </Button>
@@ -43,7 +43,7 @@ const MobileNav = ({ menu }: MobileNavProps) => {
                 size="icon"
                 aria-label="Close navigation menu"
               >
-                <X className="text-neutral-500" />
+                <X className="!size-5 text-neutral-900" />
               </Button>
             </SheetClose>
           </div>
