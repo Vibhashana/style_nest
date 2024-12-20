@@ -115,3 +115,9 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .content-container {
+    @apply mx-auto w-full px-4 sm:px-8 max-w-screen-xl;
+  }
+}
