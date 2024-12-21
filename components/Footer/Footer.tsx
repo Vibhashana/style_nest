@@ -13,7 +13,7 @@ const Footer = () => {
               Join our newsletter
             </p>
             <p className="text-neutral-500">
-              We'll send you a nice letter once per week. No spam.
+              We&apos;ll send you a nice letter once per week. No spam.
             </p>
           </div>
           <div className="flex w-full flex-col gap-4 md:max-w-sm md:flex-row">
