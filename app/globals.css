@@ -120,7 +120,7 @@
   }
 
   .link {
-    @apply text-neutral-500 transition-colors hover:text-neutral-700;
+    @apply text-neutral-400 transition-colors hover:text-neutral-700;
   }
 
   .btn-primary {

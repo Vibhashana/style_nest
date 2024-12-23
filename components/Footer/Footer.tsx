@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Socials from "./Socials";
+import FooterRow from "./FooterRow";
 
 const Footer = () => {
   return (
@@ -9,10 +10,10 @@ const Footer = () => {
       <div className="content-container">
         <div className="flex flex-col justify-between gap-6 md:flex-row">
           <div className="">
-            <p className="mb-2 text-xl font-medium text-neutral-900">
+            <p className="mb-2 text-xl font-semibold text-neutral-900">
               Join our newsletter
             </p>
-            <p className="text-neutral-500">
+            <p className="text-neutral-600">
               We&apos;ll send you a nice letter once per week. No spam.
             </p>
           </div>
@@ -23,22 +24,26 @@ const Footer = () => {
             </Button>
           </div>
         </div>
-        <div>
+        <div className="mt-[4.125rem] flex gap-[6vw]">
           <div>
             <Image
               src="/stylenest.svg"
               alt="Style Nest"
+              className="mb-8"
               width={105}
               height={32}
             />
-            <p>
+            <p className="text-neutral-600">
               Craft stunning style journeys that weave more joy into every
               thread.
             </p>
           </div>
-          <div></div>
+          {/* grid flex-1 grid-cols-[repeat(auto-fit,minmax(180px,1fr))] gap-8 */}
+          <div className="flex items-start gap-[9.85vw]">
+            <FooterRow />
+          </div>
         </div>
-        <hr className="my-6 border-neutral-200" />
+        <hr className="mb-[1.45rem] mt-16 border-neutral-200" />
         <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-center">
           <p className="text-neutral-500">
             &copy; {new Date().getFullYear()} StyleNest, Inc. All rights

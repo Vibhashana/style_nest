@@ -10,11 +10,17 @@ type FooterColumnProps = {
 
 const FooterColumn = ({ category, links }: FooterColumnProps) => {
   return (
-    <div className="grid gap-4">
-      {category && <h3 className="text-sm uppercase">{category}</h3>}
+    <div className="grid gap-3">
+      {category && (
+        <h3 className="mb-1 text-sm uppercase text-neutral-400">{category}</h3>
+      )}
       {links.length > 0 &&
         links.map(({ name, href }, index) => (
-          <Link href={href} key={index}>
+          <Link
+            href={href}
+            key={index}
+            className="font-medium text-neutral-600"
+          >
             {name}
           </Link>
         ))}

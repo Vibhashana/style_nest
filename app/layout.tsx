@@ -10,7 +10,8 @@ const notoSans = Noto_Sans({
 
 export const metadata: Metadata = {
   title: "StyleNest",
-  description: "A modern shopping experience.",
+  description:
+    "Craft stunning style journeys that weave more joy into every thread.",
 };
 
 export default function RootLayout({
@@ -20,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${notoSans.className} bg-gray-50 antialiased`}>
+      <body className={`${notoSans.className} bg-white antialiased`}>
         {children}
       </body>
     </html>

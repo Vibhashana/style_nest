@@ -3,13 +3,9 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { RiShoppingBag3Line } from "react-icons/ri";
 import MobileNav from "@/components/Navbar/MobileNav";
+import { menu } from "@/app/constants";
 
 const Navbar = () => {
-  const menu = [
-    { title: "Shop all", url: "#" },
-    { title: "Latest arrivals", url: "#" },
-  ];
-
   return (
     <header className="py-[1.625rem]">
       <div className="content-container flex w-full items-center">
