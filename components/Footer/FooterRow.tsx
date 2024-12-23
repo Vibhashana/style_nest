@@ -1,5 +1,5 @@
 import FooterColumn from "./FooterColumn";
-import { footerColumns } from "@/app/constants";
+import { footerColumns } from "@/lib/constants";
 
 const FooterRow = () => {
   return (

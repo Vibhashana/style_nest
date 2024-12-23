@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { RiShoppingBag3Line } from "react-icons/ri";
 import MobileNav from "@/components/Navbar/MobileNav";
-import { menu } from "@/app/constants";
+import { menu } from "@/lib/constants";
 
 const Navbar = () => {
   return (

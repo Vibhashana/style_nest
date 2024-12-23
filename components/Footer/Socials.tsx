@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import React from "react";
 
-import { socials } from "@/app/constants";
+import { socials } from "@/lib/constants";
 
 const Socials = () => {
   return (
